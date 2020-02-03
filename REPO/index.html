@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>link styles</title>
+	<style>
+	.nav{
+		border:5px outset green;
+	}
+	.nav ul{
+	background-color: #808080;
+	overflow: hidden;
+	list-style-type: none;
+	padding:0px;
+	margin:0;
+}
+.nav li{
+	float:left;
+}
+.nav li a{
+	display:block;
+	padding:10px;
+	text-decoration: none;
+	font-size: 20px;
+}
+.nav li a:active{
 
+	background-color: #c39bd3;
+}
+.nav li a:hover{
+
+	background-color:#c39bd3;
+}
+</style>
+</head>
+<body>
+	<a href="pdf" target="_s"> this is a link</a>
+	<div class="nav"> 
+	<ul>
+		<li><a href="">home</a></li>
+		<li><a href="">news</a></li>
+		<li><a href="">contact</a></li>
+		<li><a href="">about</a></li>
+	</ul></div>
+	<p><b>note:</b>
+	a:hover must come after a:link and a:visited in the css definition in order to be effective</p>
+	<p><b>note</b>
+	a:active must come after a:hover in the css definition in order to be effective</p>
+
+</body>
+</html>
